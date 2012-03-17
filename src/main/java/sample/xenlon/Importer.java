@@ -350,6 +350,18 @@ public class Importer {
 
     }
 
+    protected static void syswarn(String str) {
+
+        sysprintln(str);
+
+    }
+
+    protected static void sysdebug(String str) {
+
+        sysprintln(str);
+
+    }
+
     protected static void syserr(String str) {
 
         sysprintln(str);
