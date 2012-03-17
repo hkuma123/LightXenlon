@@ -1,0 +1,58 @@
+
+
+show columns from dictionary from xenlon_hoipoi;
+-------------------------------------------------------------
+FIELD  		TYPE  			NULL  	KEY  	DEFAULT  
+-------------------------------------------------------------
+COLUMN_JA	VARCHAR(200)	NO		PRI		NULL
+COLUMN_EN	VARCHAR(200)	YES	 			NULL
+-------------------------------------------------------------
+
+
+show columns from domain from xenlon_hoipoi;
+-------------------------------------------------------------
+FIELD  			TYPE  			NULL  	KEY  	DEFAULT  
+-------------------------------------------------------------
+DOMAIN_CD		VARCHAR(100)	NO		PRI		NULL
+DOMAIN_NM		VARCHAR(100)	YES	 			NULL
+DATA_TYPE		VARCHAR(100)	YES	 			NULL
+HALF_FULL_KB	VARCHAR(100)	YES	 			NULL
+DATA_LENGTH		VARCHAR(100)	YES	 			NULL
+DISPLAY_DIGIT	VARCHAR(100)	YES	 			NULL
+OUTPUT_SPEC		VARCHAR(500)	YES	 			NULL
+-------------------------------------------------------------
+
+
+show columns from annotation_definition from xenlon_hoipoi;
+-------------------------------------------------------------
+FIELD  				TYPE  			NULL  	KEY  	DEFAULT  
+-------------------------------------------------------------
+DOMAIN_CD			VARCHAR(100)	NO		PRI		NULL
+ANNOTATION_CD		VARCHAR(100)	NO		PRI		NULL
+DEFINITION_VALUE1	VARCHAR(100)	YES	 			NULL
+DEFINITION_VALUE2	VARCHAR(100)	YES	 			NULL
+DEFINITION_VALUE3	VARCHAR(100)	YES	 			NULL
+DEFINITION_VALUE4	VARCHAR(100)	YES	 			NULL
+DEFINITION_VALUE5	VARCHAR(100)	YES	 			NULL
+MSG_KEY				VARCHAR(100)	YES	 			NULL
+ARGUMENT_KEY		VARCHAR(100)	YES	 			NULL
+-------------------------------------------------------------
+
+
+show columns from annotation from xenlon_hoipoi;
+-------------------------------------------------------------
+FIELD  				TYPE  			NULL  	KEY  	DEFAULT  
+-------------------------------------------------------------
+ANNOTATION_CD		VARCHAR(100)	NO		PRI		NULL
+ANNOTATION_NM_JA	VARCHAR(100)	YES	 			NULL
+ANNOTATION_NM_EN	VARCHAR(100)	YES	 			NULL
+ARGUMENT_TYPE		VARCHAR(100)	YES	 			NULL
+ARGUMENT1			VARCHAR(100)	YES	 			NULL
+ARGUMENT2			VARCHAR(100)	YES	 			NULL
+ARGUMENT3			VARCHAR(100)	YES	 			NULL
+ARGUMENT4			VARCHAR(100)	YES	 			NULL
+ARGUMENT5			VARCHAR(100)	YES	 			NULL
+CLASSPATH_STR		VARCHAR(300)	YES	 			NULL
+-------------------------------------------------------------
+
+
