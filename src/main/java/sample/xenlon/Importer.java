@@ -114,17 +114,23 @@ public class Importer {
 
             HSSFSheet sheet = workbook.getSheetAt(i);
 
-            String sheetName = sheet.getSheetName();
-
-            executeTruncateSql(stmt, sheetName);
-
-            List<List<String>> values = getSheetData(sheet);
-
-            printValues(values);
-
-            executeInsertSql(stmt, sheetName, values);
+            procSheet(sheet, stmt);
 
         }
+
+    }
+
+    protected void procSheet(HSSFSheet sheet, Statement stmt) {
+
+        String sheetName = sheet.getSheetName();
+
+        executeTruncateSql(stmt, sheetName);
+
+        List<List<String>> values = getSheetData(sheet);
+
+        printValues(values);
+
+        executeInsertSql(stmt, sheetName, values);
 
     }
 
